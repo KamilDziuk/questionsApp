@@ -14,7 +14,7 @@ let passwordAlert = document.querySelector('.passwordAlert');
 
 
 
-// Method post start
+// Method post nad password encryption start
 document.querySelector('.submit').addEventListener('click', function() {
     if(passwordInput.value == "")
     {
@@ -50,7 +50,7 @@ console.error('Error:', error);
 });
     }
 });
-// Method post end
+// Method post nad password encryption end
 
 //  function  to google translate start
  googleTranslateElementInit = () =>  {
