@@ -6,5 +6,7 @@ $config = array(
 'password' => '',
 'dbname' => ''
 );
+
+
 ?>
 <!-- Connecting to the database (SQL) end -->

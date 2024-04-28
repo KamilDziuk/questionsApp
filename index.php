@@ -19,13 +19,13 @@ src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit
 <!-- elemnt  to google translate end -->
 <br>
 <!-- Displaying the length of Question App start -->
-length ID: <div class="lengthApp"></div>
+Number of total questions: <div class="lengthApp"></div>
 <!-- Displaying the length of Question App end -->
 
 <!-- form for adding questions and answers start -->
-<input class="id" type="number"> ID<br>
-<input class="questionsEN" type="text"> Q-EN<br>
-<input class="answerTheQuestionEN" type="text"> A-EN<br><br>
+<input class="id" type="number" placeholder="Id"><br>
+<input class="questionsEN" type="text" placeholder="Questions"><br>
+<input class="answerTheQuestionEN" type="text" placeholder="Answer"><br><br>
 <button class="submit">Sent</button><br><br>
 <!-- form for adding questions and answers end -->
 
@@ -33,7 +33,10 @@ length ID: <div class="lengthApp"></div>
 <button class="refresh">Questions</button><br><br>
 <button class="answer">Answer</button><br><br>
 <div class="contentOne"></div><br>
-<div class="contentTwo"></div><br>
+<div class="contentTwo"></div><br><br>
+
+Before adding another item, you must enter your password <input class="passwordInput" type="password" placeholder="Password"><br><br>
+<div class="passwordAlert"></div>
 <!-- View questions and answers end -->
 <?php
 require_once 'configFunction.php';

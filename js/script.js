@@ -3,16 +3,30 @@
 let lengthApp = document.querySelector('.lengthApp');
 let questionsEN = document.querySelector('.questionsEN');
 let answerTheQuestionEN = document.querySelector('.answerTheQuestionEN');
+let passwordInput = document.querySelector('.passwordInput');
 let refresh = document.querySelector('.refresh');
 let answer = document.querySelector('.answer');
 let contentOne = document.querySelector('.contentOne');
 let contentTwo = document.querySelector('.contentTwo');
 let contentQuestionEN = document.querySelector('.contentQuestionEN');
 let id = document.querySelector('.id');
+let passwordAlert = document.querySelector('.passwordAlert');
+
+
 
 // Method post start
 document.querySelector('.submit').addEventListener('click', function() {
-
+    if(passwordInput.value == "")
+    {
+    passwordAlert.style.color = "red";
+    passwordAlert.innerHTML = "You have not entered your password or you entered the wrong password";
+    }
+   
+    else if (passwordInput.value == "" ){
+        passwordAlert.style.color = "green";
+        passwordAlert.innerHTML = `Password correct! <br> You have added a new pose from the list`;
+        
+    
 let questionsAppData = {
 id: id.value,
 questionsEN: questionsEN.value,
@@ -34,6 +48,7 @@ console.log(data);
 .catch(error => {
 console.error('Error:', error);
 });
+    }
 });
 // Method post end
 
