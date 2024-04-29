@@ -21,8 +21,7 @@ document.querySelector('.submit').addEventListener('click', function() {
     passwordAlert.style.color = "red";
     passwordAlert.innerHTML = "You have not entered your password or you entered the wrong password";
     }
-   
-    else if (passwordInput.value == "" ){
+    else if (passwordInput.value == "Password"){
         passwordAlert.style.color = "green";
         passwordAlert.innerHTML = `Password correct! <br> You have added a new pose from the list`;
         
@@ -48,6 +47,10 @@ console.log(data);
 .catch(error => {
 console.error('Error:', error);
 });
+    }
+    else{
+        passwordAlert.style.color = "red";
+        passwordAlert.innerHTML = "You have not entered your password or you entered the wrong password";
     }
 });
 // Method post nad password encryption end
