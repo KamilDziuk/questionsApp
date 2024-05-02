@@ -1,8 +1,8 @@
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="js/script.js" defer>
   </script>
 <!-- path to google translate start -->
@@ -14,6 +14,7 @@ src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit
 
 </head>
 <body>  
+
 <!-- elemnt  to google translate start -->
 <div id="google_translate_element"></div>
 <!-- elemnt  to google translate end -->
@@ -46,5 +47,21 @@ require_once 'configFunction.php';
 let questionsApp = <?php echo json_encode($questionsApp);?> 
 //  Downloading data from the database end
 </script>
+
+ <!-- Search function start  -->
+
+ <div class="search-wrapper">
+    <label for="search">Search </label><br>
+    <input type="search" id="search" data-search>
+  </div>
+  <div class="questions-cards" data-questions-cards-container></div>
+  <template data-questions-template>
+    <div class="card">
+      <div class="header" data-header></div>
+      <div class="body" data-body></div>
+    </div>
+  </template>
+   <!-- Search function end  -->
+
 </body>
 </html>
